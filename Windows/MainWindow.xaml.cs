@@ -10,10 +10,9 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Tortuga_DaniilArtyukhov
+namespace Tortuga_DaniilArtyukhov.Windows
 {
     /// <summary>
     /// Логика взаимодействия для MainWindow.xaml

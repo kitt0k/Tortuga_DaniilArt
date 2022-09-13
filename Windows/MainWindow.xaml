@@ -1,0 +1,66 @@
+﻿<Window x:Class="Tortuga_DaniilArtyukhov.Windows.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tortuga_DaniilArtyukhov.Windows"
+        mc:Ignorable="d"
+        Title="TableSelect"
+        Height="903"
+        Width="547"
+        MinHeight="903"
+        MinWidth="547"
+        WindowStartupLocation="CenterScreen"
+        Background="LightGray"
+    
+        >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height ="*"/>
+            <RowDefinition Height ="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+
+        <TextBlock
+              Grid.ColumnSpan="2"
+            Text="Добро пожаловать"
+            FontSize="38"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            >
+        </TextBlock>
+
+        <TextBlock
+            Grid.Row="2"
+              Grid.ColumnSpan="2"
+            Text="Выберите номер столика"
+            FontSize="28"
+            VerticalAlignment="Top"
+            HorizontalAlignment="Center"
+            >
+        </TextBlock>
+
+        <Button
+            Grid.Row="2" Background="White"
+            
+            ></Button>
+
+            <TextBlock
+            Grid.Row="3"
+              Grid.ColumnSpan="2"
+            Text="2020 ресторан 'ТОРТУГАС ДАЙНЕР ПАБ' "
+            FontSize="18"
+            Foreground="#FFA3A3A3"
+            VerticalAlignment="Bottom"
+            HorizontalAlignment="Center"
+            >
+        </TextBlock>
+    </Grid>
+</Window>
