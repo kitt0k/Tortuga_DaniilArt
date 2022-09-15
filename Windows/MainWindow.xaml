@@ -48,7 +48,7 @@
         </TextBlock>
 
         <Button
-            Grid.Row="2" Background="White"
+            Grid.Row="2" Background="White" RenderTransformOrigin="0,0" Margin="109,42,91,108"
             
             ></Button>
 
