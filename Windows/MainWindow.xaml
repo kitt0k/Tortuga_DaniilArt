@@ -48,19 +48,108 @@
         </TextBlock>
 
         <Button
-            Grid.Row="2" Background="White" RenderTransformOrigin="0,0" Margin="109,42,91,108"
+            x:Name="Table1"
+            Content="1"
+            FontSize="40"
+            FontFamily="Julee"
+            Grid.Row="2" 
+            Background="White" 
+            RenderTransformOrigin="0,0" 
+            Margin="110,42,90,108" Click="Table1_Click"
             
             ></Button>
 
-            <TextBlock
+
+        <Button
+              x:Name="Table2"
+            Grid.Row="2"
+            Content="2"
+            FontSize="40"
+            FontFamily="Julee"
+            Background="White" 
+            RenderTransformOrigin="0,0" 
+            Margin="188,42,12,108" Click="Table2_Click"
+            
+            />
+
+        <TextBlock
             Grid.Row="3"
+            Grid.Column="0"
               Grid.ColumnSpan="2"
             Text="2020 ресторан 'ТОРТУГАС ДАЙНЕР ПАБ' "
             FontSize="18"
             Foreground="#FFA3A3A3"
             VerticalAlignment="Bottom"
             HorizontalAlignment="Center"
+            Margin="100,0,83,13.5" 
+            Width="359"
             >
         </TextBlock>
+        <Button
+              x:Name="Table5"
+            Content="5"
+            FontSize="40"
+            FontFamily="Julee"
+            Grid.Row="2" 
+            Background="White" 
+            RenderTransformOrigin="0,0" 
+            Margin="109,128,91,22" Click="Table5_Click"
+            
+            />
+        <Button
+              x:Name="Table6"
+            Content="6"
+            FontSize="40"
+            FontFamily="Julee"
+            Grid.Row="2"
+            Background="White" 
+            RenderTransformOrigin="0,0" 
+            Margin="188,128,12,22" Click="Table6_Click"
+            
+            />
+        <Button
+              x:Name="Table3"
+            Content="3"
+            FontSize="40"
+            FontFamily="Julee"
+            Grid.Row="2" 
+            Background="White" 
+            RenderTransformOrigin="0,0" 
+            Margin="12,42,188,108" Grid.Column="1" Click="Table3_Click"
+            
+            />
+        <Button
+              x:Name="Table4"
+            Content="4"
+            FontSize="40"
+            FontFamily="Julee"
+            Grid.Row="2"
+            Background="White" 
+            RenderTransformOrigin="0,0" 
+            Margin="92,42,108,108" Grid.Column="1" Click="Table4_Click"
+            
+            />
+        <Button
+              x:Name="Table7"
+            Content="7"
+            FontSize="40"
+            FontFamily="Julee"
+            Grid.Row="2" 
+            Background="White" 
+            RenderTransformOrigin="0,0" 
+            Margin="12,128,188,22" Grid.Column="1" Click="Table7_Click"
+            
+            />
+        <Button
+              x:Name="Table8"
+            Content="8"
+            FontSize="40"
+            FontFamily="Julee"
+            Grid.Row="2"
+            Background="White" 
+            RenderTransformOrigin="0,0" 
+            Margin="93,128,107,22" Grid.Column="1" Click="Table8_Click"
+            
+            />
     </Grid>
 </Window>

@@ -23,5 +23,96 @@ namespace Tortuga_DaniilArtyukhov.Windows
         {
             InitializeComponent();
         }
+
+        private void Table1_Click(object sender, RoutedEventArgs e)
+        {
+            var resultClick = MessageBox.Show("Вы уверены?", "Выбор стола", MessageBoxButton.YesNo);
+            if (resultClick == MessageBoxResult.Yes)
+            {
+                MainMenuWindow mainWindow = new MainMenuWindow();
+                mainWindow.Show();
+                this.Close();
+            }
+
+        }
+
+        private void Table2_Click(object sender, RoutedEventArgs e)
+        {
+            var resultClick = MessageBox.Show("Вы уверены?", "Выбор стола", MessageBoxButton.YesNo);
+            if (resultClick == MessageBoxResult.Yes)
+            {
+                MainMenuWindow mainWindow = new MainMenuWindow();
+                mainWindow.Show();
+                this.Close();
+            }
+        }
+
+        private void Table3_Click(object sender, RoutedEventArgs e)
+        {
+            var resultClick = MessageBox.Show("Вы уверены?", "Выбор стола", MessageBoxButton.YesNo);
+            if (resultClick == MessageBoxResult.Yes)
+            {
+                MainMenuWindow mainWindow = new MainMenuWindow();
+                mainWindow.Show();
+                this.Close();
+            }
+        }
+
+        private void Table4_Click(object sender, RoutedEventArgs e)
+        {
+            var resultClick = MessageBox.Show("Вы уверены?", "Выбор стола", MessageBoxButton.YesNo);
+            if (resultClick == MessageBoxResult.Yes)
+            {
+                MainMenuWindow mainWindow = new MainMenuWindow();
+                mainWindow.Show();
+                this.Close();
+            }
+        }
+
+        private void Table5_Click(object sender, RoutedEventArgs e)
+        {
+            var resultClick = MessageBox.Show("Вы уверены?", "Выбор стола", MessageBoxButton.YesNo);
+            if (resultClick == MessageBoxResult.Yes)
+            {
+                MainMenuWindow mainWindow = new MainMenuWindow();
+                mainWindow.Show();
+                this.Close();
+            }
+        }
+
+        private void Table6_Click(object sender, RoutedEventArgs e)
+        {
+            var resultClick = MessageBox.Show("Вы уверены?", "Выбор стола", MessageBoxButton.YesNo);
+            if (resultClick == MessageBoxResult.Yes)
+            {
+                MainMenuWindow mainWindow = new MainMenuWindow();
+                mainWindow.Show();
+                this.Close();
+            }
+        }
+
+        private void Table7_Click(object sender, RoutedEventArgs e)
+        {
+            var resultClick = MessageBox.Show("Вы уверены?", "Выбор стола", MessageBoxButton.YesNo);
+            if (resultClick == MessageBoxResult.Yes)
+            {
+                MainMenuWindow mainWindow = new MainMenuWindow();
+                mainWindow.Show();
+                this.Close();
+            }
+
+        }
+
+        private void Table8_Click(object sender, RoutedEventArgs e)
+        {
+            var resultClick = MessageBox.Show("Вы уверены?", "Выбор стола", MessageBoxButton.YesNo);
+            if (resultClick == MessageBoxResult.Yes)
+            {
+                MainMenuWindow mainWindow = new MainMenuWindow();
+                mainWindow.Show();
+                this.Close();
+            }
+
+        }
     }
 }
