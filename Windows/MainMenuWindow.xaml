@@ -36,6 +36,8 @@
             Margin="139,168,138,0" Grid.RowSpan="2"
             />
         <Button
+            Content="Меню"
+            FontSize="28"
             x:Name="FoodMenu"
             Grid.Row="1"
             Grid.ColumnSpan="2"
@@ -46,6 +48,8 @@
             />
         <Button
             x:Name="About"
+             Content="О Нас"
+            FontSize="28"
              Grid.Row="1"
             Grid.ColumnSpan="2"
             Background="White" 
@@ -57,6 +61,8 @@
         </Button>
         <Button
               x:Name="BackToMainW"
+             Content="Назад"
+            FontSize="28"
             Background="White" 
             RenderTransformOrigin="0,0" 
             Margin="138,0,139,167" 

@@ -28,7 +28,16 @@
 
 
 
-
+        <Button
+            x:Name="Back"
+            Content="Назад"
+            FontSize="38"
+              Background="White" 
+            Grid.Row="3"
+            VerticalAlignment="Bottom"
+            HorizontalAlignment="Center"
+            Margin="70,0,72,68.5" Height="52" Width="400" Grid.ColumnSpan="2" Click="Back_Click"
+            />
 
         <TextBlock
             Grid.Row="3"
