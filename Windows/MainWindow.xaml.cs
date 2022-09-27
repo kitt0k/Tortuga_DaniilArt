@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Tortuga_DaniilArtyukhov.Windows;
+
 
 namespace Tortuga_DaniilArtyukhov.Windows
 {
@@ -26,12 +28,15 @@ namespace Tortuga_DaniilArtyukhov.Windows
 
         private void Table1_Click(object sender, RoutedEventArgs e)
         {
+            
             var resultClick = MessageBox.Show("Вы уверены?", "Выбор стола", MessageBoxButton.YesNo);
             if (resultClick == MessageBoxResult.Yes)
             {
                 MainMenuWindow mainWindow = new MainMenuWindow();
+               // MainMenuWindow.Num.Text = n1.Text;
                 mainWindow.Show();
                 this.Close();
+                              
             }
 
         }

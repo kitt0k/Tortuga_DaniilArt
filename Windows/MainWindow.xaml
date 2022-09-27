@@ -11,7 +11,7 @@
         MinHeight="903"
         MinWidth="547"
         WindowStartupLocation="CenterScreen"
-        Background="LightGray"
+        Background="AliceBlue"
     
         >
     <Grid>
@@ -31,7 +31,7 @@
         <TextBlock
               Grid.ColumnSpan="2"
             Text="Добро пожаловать"
-            FontSize="38"
+            FontSize="58"
             VerticalAlignment="Center"
             HorizontalAlignment="Center"
             >
@@ -47,6 +47,26 @@
             >
         </TextBlock>
 
+
+        <Image
+            Source="/Images\TLogo.png"
+            Grid.Row="1"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            ></Image>
+
+        <TextBlock
+            x:Name="n1"
+               Text="1"
+            FontSize="40"
+            FontFamily="Julee"
+            Grid.Row="2" 
+          
+            RenderTransformOrigin="0,0" 
+            Margin="117,41,83,108"
+            
+            ></TextBlock>
+
         <Button
             x:Name="Table1"
             Content="1"
@@ -55,10 +75,12 @@
             Grid.Row="2" 
             Background="White" 
             RenderTransformOrigin="0,0" 
-            Margin="110,42,90,108" Click="Table1_Click"
+            Margin="110,42,90,108" 
+            Click="Table1_Click"
             
             ></Button>
 
+       
 
         <Button
               x:Name="Table2"
@@ -76,13 +98,13 @@
             Grid.Row="3"
             Grid.Column="0"
               Grid.ColumnSpan="2"
-            Text="2020 ресторан 'ТОРТУГАС ДАЙНЕР ПАБ' "
+            Text="ТОРТУГАС"
             FontSize="18"
             Foreground="#FFA3A3A3"
             VerticalAlignment="Bottom"
             HorizontalAlignment="Center"
-            Margin="100,0,83,13.5" 
-            Width="359"
+            Margin="229,0,227,9.5" 
+            Width="91"
             >
         </TextBlock>
         <Button

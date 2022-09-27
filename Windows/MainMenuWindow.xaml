@@ -79,6 +79,24 @@
             Grid.Row="2"
             
             />
+
+        <Image
+            Source="/Images\TLogo.png"
+            Grid.Row="0"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+          Height="110"
+            ></Image>
+        
+        <TextBlock
+           
+             x:Name="Num"
+            RenderTransformOrigin="0,0" 
+            Margin="242,142,242,22"
+            Grid.ColumnSpan="2"
+            Grid.Row="2"
+            ></TextBlock>
+        
         <TextBlock
             Grid.Row="2"
             Grid.ColumnSpan="2"

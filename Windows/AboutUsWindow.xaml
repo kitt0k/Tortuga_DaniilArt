@@ -26,11 +26,21 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <TextBlock
+        <Image
+            Source="/Images\TLogo.png"
             Grid.Row="0"
-            Grid.RowSpan="3"
             Grid.Column="0"
             Grid.ColumnSpan="2"
+          Height="110"
+            ></Image>
+
+
+        <TextBlock
+            Grid.RowSpan="4"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            FontSize="20"
+            TextWrapping="Wrap"
             Text="Местный бар, где можно посидеть, собраться с друзьями в настольные игры, отведать импортные разливные сорта, вкусно поесть, зайти на кофе, посмотреть киберспортивные трансляции и душевно отметить праздник.
 
 Tortuga'S - необычное неформальное заведение, главными особенностями которого являются:
@@ -45,10 +55,8 @@ Tortuga'S - необычное неформальное заведение, гл
 пн-чт 8:00 - 23:00,
 пт 8:00 - 01:00,
 сб 13:00 - 01:00
-вс 13:00 - 22:00"
-            > 
-            
-        </TextBlock>
+вс 13:00 - 22:00" Margin="0,170,0,-0.5"
+            />
 
         <Button
             x:Name="Back"
