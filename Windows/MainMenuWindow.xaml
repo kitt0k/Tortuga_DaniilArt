@@ -27,13 +27,13 @@
         </Grid.ColumnDefinitions>
 
         <TextBlock
-            Text="Выбор раздела"
+            Text="  Выбор раздела "
             Grid.Row="1"
             Grid.ColumnSpan="2"
             FontSize="38"
             VerticalAlignment="Top"
             HorizontalAlignment="Center"
-            Margin="137,76,140,0"
+            Margin="110,76,112,0" Width="320"
             />
         <Button
             Content="Меню"
