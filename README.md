@@ -7,16 +7,16 @@
 -----------------------------------------------------------------------------------------------------------------------
 
 
-![image](https://user-images.githubusercontent.com/81153185/192795266-6d73907b-43a7-41ba-8b49-6990e13227c1.png)
+![image](https://user-images.githubusercontent.com/81153185/192799570-d8c0fc94-f0a7-4ea5-9120-f468e093fb04.png)
 Основное окно с выбором стола.
 
-![image](https://user-images.githubusercontent.com/81153185/192795461-7ff05e9f-3e1b-4944-9066-671911a8f41b.png)
+![image](https://user-images.githubusercontent.com/81153185/192799647-026c4738-ce93-45e4-aead-0997f0b0286e.png)
 Возможность подтвердить выбор.
 
 -----------------------------------------------------------------------------------------------------------------------
 
 
-![image](https://user-images.githubusercontent.com/81153185/192795543-ff8a3dc1-a841-41c2-bb25-2341d301cc0e.png)
+![image](https://user-images.githubusercontent.com/81153185/192799687-0131ba8e-cfac-4ad6-a374-277651db393e.png)
 Основной раздел приложения с возможностью узнать больше о Tortuga и вернуться назад.
 Основйная функция - переход к меню заведения.
 
