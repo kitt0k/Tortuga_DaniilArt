@@ -29,7 +29,7 @@ namespace Tortuga_DaniilArtyukhov.Windows
         private void Table1_Click(object sender, RoutedEventArgs e)
         {
             
-            var resultClick = MessageBox.Show("Вы уверены?", "Выбор стола", MessageBoxButton.YesNo);
+            var resultClick = MessageBox.Show("Вы уверены что хотите выбрать 1 стол?", "Выбор стола", MessageBoxButton.YesNo);
             if (resultClick == MessageBoxResult.Yes)
             {
                 MainMenuWindow mainWindow = new MainMenuWindow();
@@ -43,7 +43,7 @@ namespace Tortuga_DaniilArtyukhov.Windows
 
         private void Table2_Click(object sender, RoutedEventArgs e)
         {
-            var resultClick = MessageBox.Show("Вы уверены?", "Выбор стола", MessageBoxButton.YesNo);
+            var resultClick = MessageBox.Show("Вы уверены что хотите выбрать 2 стол?", "Выбор стола", MessageBoxButton.YesNo);
             if (resultClick == MessageBoxResult.Yes)
             {
                 MainMenuWindow mainWindow = new MainMenuWindow();
@@ -54,7 +54,7 @@ namespace Tortuga_DaniilArtyukhov.Windows
 
         private void Table3_Click(object sender, RoutedEventArgs e)
         {
-            var resultClick = MessageBox.Show("Вы уверены?", "Выбор стола", MessageBoxButton.YesNo);
+            var resultClick = MessageBox.Show("Вы уверены что хотите выбрать 3 стол?", "Выбор стола", MessageBoxButton.YesNo);
             if (resultClick == MessageBoxResult.Yes)
             {
                 MainMenuWindow mainWindow = new MainMenuWindow();
@@ -65,7 +65,7 @@ namespace Tortuga_DaniilArtyukhov.Windows
 
         private void Table4_Click(object sender, RoutedEventArgs e)
         {
-            var resultClick = MessageBox.Show("Вы уверены?", "Выбор стола", MessageBoxButton.YesNo);
+            var resultClick = MessageBox.Show("Вы уверены что хотите выбрать 4 стол?", "Выбор стола", MessageBoxButton.YesNo);
             if (resultClick == MessageBoxResult.Yes)
             {
                 MainMenuWindow mainWindow = new MainMenuWindow();
@@ -76,7 +76,7 @@ namespace Tortuga_DaniilArtyukhov.Windows
 
         private void Table5_Click(object sender, RoutedEventArgs e)
         {
-            var resultClick = MessageBox.Show("Вы уверены?", "Выбор стола", MessageBoxButton.YesNo);
+            var resultClick = MessageBox.Show("Вы уверены что хотите выбрать 5 стол?", "Выбор стола", MessageBoxButton.YesNo);
             if (resultClick == MessageBoxResult.Yes)
             {
                 MainMenuWindow mainWindow = new MainMenuWindow();
@@ -87,7 +87,7 @@ namespace Tortuga_DaniilArtyukhov.Windows
 
         private void Table6_Click(object sender, RoutedEventArgs e)
         {
-            var resultClick = MessageBox.Show("Вы уверены?", "Выбор стола", MessageBoxButton.YesNo);
+            var resultClick = MessageBox.Show("Вы уверены что хотите выбрать 6 стол?", "Выбор стола", MessageBoxButton.YesNo);
             if (resultClick == MessageBoxResult.Yes)
             {
                 MainMenuWindow mainWindow = new MainMenuWindow();
@@ -98,7 +98,7 @@ namespace Tortuga_DaniilArtyukhov.Windows
 
         private void Table7_Click(object sender, RoutedEventArgs e)
         {
-            var resultClick = MessageBox.Show("Вы уверены?", "Выбор стола", MessageBoxButton.YesNo);
+            var resultClick = MessageBox.Show("Вы уверены что хотите выбрать 7 стол?", "Выбор стола", MessageBoxButton.YesNo);
             if (resultClick == MessageBoxResult.Yes)
             {
                 MainMenuWindow mainWindow = new MainMenuWindow();
@@ -110,7 +110,7 @@ namespace Tortuga_DaniilArtyukhov.Windows
 
         private void Table8_Click(object sender, RoutedEventArgs e)
         {
-            var resultClick = MessageBox.Show("Вы уверены?", "Выбор стола", MessageBoxButton.YesNo);
+            var resultClick = MessageBox.Show("Вы уверены что хотите выбрать 8 стол?", "Выбор стола", MessageBoxButton.YesNo);
             if (resultClick == MessageBoxResult.Yes)
             {
                 MainMenuWindow mainWindow = new MainMenuWindow();
