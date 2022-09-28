@@ -71,15 +71,17 @@ Tortuga'S - необычное неформальное заведение, гл
 
         <TextBlock
             Grid.Row="3"
-            Grid.ColumnSpan="2"
-            Text="2020 ресторан 'ТОРТУГАС ДАЙНЕР ПАБ' "
+            Grid.Column="0"
+              Grid.ColumnSpan="2"
+            Text="   2020 ресторан 'ТОРТУГАС ДАЙНЕР ПАБ' "
             FontSize="18"
             Foreground="#FFA3A3A3"
             VerticalAlignment="Bottom"
-            HorizontalAlignment="Center" 
-            Margin="103,0,103,21.5"
-            
-            />
+            HorizontalAlignment="Center"
+            Margin="94,0,93,9.5" 
+            Width="355" Height="26"
+            >
+        </TextBlock>
 
     </Grid>
 </Window>

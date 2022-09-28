@@ -28,33 +28,33 @@
 
         <TextBlock
             Text="Выбор раздела"
-            Grid.Row="0"
+            Grid.Row="1"
             Grid.ColumnSpan="2"
             FontSize="38"
             VerticalAlignment="Top"
             HorizontalAlignment="Center"
-            Margin="139,168,138,0" Grid.RowSpan="2"
+            Margin="137,76,140,0"
             />
         <Button
             Content="Меню"
             FontSize="28"
             x:Name="FoodMenu"
-            Grid.Row="1"
+            Grid.Row="2"
             Grid.ColumnSpan="2"
             Background="White" 
             RenderTransformOrigin="0,0" 
-            Margin="139,31,139,133" Click="FoodMenu_Click"
+            Margin="140,52,138,112" Click="FoodMenu_Click"
             
             />
         <Button
             x:Name="About"
              Content="О Нас"
             FontSize="28"
-             Grid.Row="1"
+             Grid.Row="2"
             Grid.ColumnSpan="2"
             Background="White" 
             RenderTransformOrigin="0,0" 
-            Margin="140,126,138,38" Click="About_Click"
+            Margin="138,137,140,27" Click="About_Click"
             
             >
 
@@ -65,18 +65,9 @@
             FontSize="28"
             Background="White" 
             RenderTransformOrigin="0,0" 
-            Margin="138,0,139,167" 
+            Margin="138,0,139,166.5" 
             Grid.ColumnSpan="2" 
-            Grid.Row="2" Click="BackToMainW_Click"
-            
-            />
-        <Button
-            x:Name="TableNumber"
-            Background="White" 
-            RenderTransformOrigin="0,0" 
-            Margin="242,142,242,22"
-            Grid.ColumnSpan="2"
-            Grid.Row="2"
+            Grid.Row="3" Click="BackToMainW_Click"
             
             />
 
@@ -87,37 +78,19 @@
             Grid.ColumnSpan="2"
           Height="110"
             ></Image>
-        
-        <TextBlock
-           
-             x:Name="Num"
-            RenderTransformOrigin="0,0" 
-            Margin="242,142,242,22"
-            Grid.ColumnSpan="2"
-            Grid.Row="2"
-            ></TextBlock>
-        
-        <TextBlock
-            Grid.Row="2"
-            Grid.ColumnSpan="2"
-            Text="Ваш столик"
-            
-            FontSize="28"
-            VerticalAlignment="Center"
-            HorizontalAlignment="Center"
-            Margin="199,85,196,96"
-            />
         <TextBlock
             Grid.Row="3"
-            Grid.ColumnSpan="2"
-            Text="2020 ресторан 'ТОРТУГАС ДАЙНЕР ПАБ' "
+            Grid.Column="0"
+              Grid.ColumnSpan="2"
+            Text="   2020 ресторан 'ТОРТУГАС ДАЙНЕР ПАБ' "
             FontSize="18"
             Foreground="#FFA3A3A3"
             VerticalAlignment="Bottom"
-            HorizontalAlignment="Center" 
-            Margin="103,0,103,21.5"
-            
-            />
+            HorizontalAlignment="Center"
+            Margin="94,0,93,9.5" 
+            Width="355" Height="26"
+            >
+        </TextBlock>
 
     </Grid>
 </Window>
