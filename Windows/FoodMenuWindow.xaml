@@ -17,6 +17,9 @@
         <Grid.RowDefinitions>
             <RowDefinition Height ="*"/>
             <RowDefinition Height ="*"/>
+            <RowDefinition Height ="*"/>
+            <RowDefinition Height ="*"/>
+            <RowDefinition Height ="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
@@ -36,26 +39,50 @@
 
         <TextBlock
             Text="Меню"
-            Grid.Row="0"
+            Grid.Row="1"
             Grid.Column="0"
             Grid.ColumnSpan="2"
-            FontSize="30"
-            VerticalAlignment="Bottom"
+            FontSize="70"
+            VerticalAlignment="Center"
             HorizontalAlignment="Center"
             ></TextBlock>
 
+        <Image
+             Grid.Row="1"
+            Grid.Column="0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+             Margin="24,41,0,35" 
+            Height="49"
+            Width="101"
+            Source="/Images\back1.png"
+            ></Image>
 
-        <ListView x:Name="listBook"
-                  Grid.Row="1"
-                  Grid.RowSpan="3"
+
+        <Button
+            x:Name="btnBack"
+            Opacity="0"
+            Grid.Row="1"
+            Grid.Column="0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            Content="Назад"
+            Margin="24,41,0,35" 
+            Height="49" 
+            Width="101" Click="btnBack_Click"
+            ></Button>
+
+        
+
+            <ListView x:Name="listBook"
+                  Grid.Row="2"
+                  Grid.RowSpan="4"
                   Grid.Column="0"
                   Grid.ColumnSpan="2"
-                  KeyUp="listBook_KeyUp"
-                  SelectionChanged="listBook_SelectionChanged" 
-                  MouseDoubleClick="listBook_MouseDoubleClick"
-                 ScrollViewer.HorizontalScrollBarVisibility="Disabled" Margin="0,161,0,35.5"
+                 
+                 ScrollViewer.HorizontalScrollBarVisibility="Disabled" Margin="0,0,0,0.5"
                  >
-            
+
             <!--<ListView.View>
                 <GridView>
                     <GridViewColumn Header="ID" Width="35" DisplayMemberBinding="{Binding ID}"/>
@@ -68,8 +95,8 @@
                     <GridViewColumn Header="Статус Удаления" Width="150" DisplayMemberBinding="{Binding IsDeleted}"/>
                 </GridView>
             </ListView.View>-->
-            
-            
+
+
             <ListView.ItemsPanel>
                 <ItemsPanelTemplate>
                     <WrapPanel/>
@@ -78,7 +105,7 @@
             <ListView.ItemTemplate>
 
                 <DataTemplate>
-                    <Border Background="Brown"
+                    <Border Background="LightGray"
                          Height="100"
                          Width="450"
                          Margin="10"
@@ -103,7 +130,7 @@
                                 <RowDefinition Height="1*"/>
                             </Grid.RowDefinitions>
 
-                            <Image x:Name="photoUser"
+                            <Image x:Name="pfotoFood"
                                    Margin="0 10 0 0"
                             Grid.RowSpan="5">
                                 <Image.Source>
@@ -115,7 +142,7 @@
                                 </Image.Source>
                             </Image>
 
-                        
+
                             <TextBlock Text="{Binding Path=NameBook}"
                                        Grid.Column="2"
                                        FontSize="10"
@@ -172,7 +199,7 @@
 
 
         <TextBlock
-            Grid.Row="3"
+            Grid.Row="6"
             Grid.Column="0"
               Grid.ColumnSpan="2"
             Text="   2020 ресторан 'ТОРТУГАС ДАЙНЕР ПАБ' "

@@ -183,6 +183,8 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <Resource Include="Images\back1.png" />
+    <Resource Include="Images\back.png" />
     <Resource Include="Images\TLogo.png" />
   </ItemGroup>
   <ItemGroup>
