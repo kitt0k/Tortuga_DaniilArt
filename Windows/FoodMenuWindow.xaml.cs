@@ -30,5 +30,12 @@ namespace Tortuga_DaniilArtyukhov.Windows
             mainWindow.Show();
             this.Close();
         }
+
+        private void ToCart_Click(object sender, RoutedEventArgs e)
+        {
+            Cart mainWindow = new Cart();
+            mainWindow.Show();
+            this.Close();
+        }
     }
 }

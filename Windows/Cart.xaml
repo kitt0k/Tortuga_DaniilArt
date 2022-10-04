@@ -1,0 +1,103 @@
+﻿<Window x:Class="Tortuga_DaniilArtyukhov.Windows.Cart"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tortuga_DaniilArtyukhov.Windows"
+        mc:Ignorable="d"
+        Title="Cart" 
+         Height="903"
+        Width="547"
+        MinHeight="903"
+        MinWidth="547"
+        WindowStartupLocation="CenterScreen"
+        Background="LightGray"
+        >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height ="*"/>
+            <RowDefinition Height ="*"/>
+            <RowDefinition Height ="*"/>
+            <RowDefinition Height ="*"/>
+            <RowDefinition Height ="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Image
+            Source="/Images\TLogo.png"
+            Grid.Row="0"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+          Height="110"
+            ></Image>
+
+        <TextBlock
+            Text="Карзина"
+            Grid.Row="1"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            FontSize="70"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            ></TextBlock>
+
+        <Image
+             Grid.Row="1"
+            Grid.Column="0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+             Margin="24,41,0,35" 
+            Height="49"
+            Width="101"
+            Source="/Images\back1.png"
+            ></Image>
+
+
+        <Button
+            x:Name="btnBack"
+            Opacity="0"
+            Grid.Row="1"
+            Grid.Column="0"
+            VerticalAlignment="Center"
+            Content="Назад"
+            Margin="24,41,146,35" 
+            Height="49" Click="btnBack_Click"
+            />
+
+
+        <Button
+            x:Name="ToCart"
+            Content="Перейти к оформлению"
+            FontSize="16"
+            Grid.Row="6"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center" 
+            Height="54" 
+            Margin="174,9.5,172,61.5" 
+            RenderTransformOrigin="0.5,0.5" 
+            Width="196" Click="ToCart_Click"
+            />
+        
+        <TextBlock
+            Grid.Row="6"
+            Grid.Column="0"
+              Grid.ColumnSpan="2"
+            Text="   2020 ресторан 'ТОРТУГАС ДАЙНЕР ПАБ' "
+            FontSize="18"
+            Foreground="#FFA3A3A3"
+            VerticalAlignment="Bottom"
+            HorizontalAlignment="Center"
+            Margin="94,0,93,9.5" 
+            Width="355" Height="26"
+            >
+        </TextBlock>
+    </Grid>
+</Window>

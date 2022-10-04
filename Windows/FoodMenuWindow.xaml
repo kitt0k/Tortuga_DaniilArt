@@ -64,17 +64,15 @@
             Opacity="0"
             Grid.Row="1"
             Grid.Column="0"
-            HorizontalAlignment="Left"
             VerticalAlignment="Center"
             Content="Назад"
-            Margin="24,41,0,35" 
-            Height="49" 
-            Width="101" Click="btnBack_Click"
-            ></Button>
+            Margin="24,41,146,35" 
+            Height="49" Click="btnBack_Click"
+            />
 
-        
 
-            <ListView x:Name="listBook"
+
+        <ListView x:Name="listBook"
                   Grid.Row="2"
                   Grid.RowSpan="4"
                   Grid.Column="0"
@@ -195,7 +193,20 @@
             </ListView.ItemTemplate>
         </ListView>
 
-
+        <Button
+            x:Name="ToCart"
+            Content="Перейти к оформлению"
+            FontSize="16"
+            Grid.Row="6"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center" 
+            Height="54" 
+            Margin="174,9.5,172,61.5" 
+            RenderTransformOrigin="0.5,0.5" 
+            Width="196" Click="ToCart_Click"
+            />
 
 
         <TextBlock

@@ -12,7 +12,6 @@
         MinWidth="547"
         WindowStartupLocation="CenterScreen"
         Background="AliceBlue"
-    
         >
     <Grid>
         <Grid.RowDefinitions>
