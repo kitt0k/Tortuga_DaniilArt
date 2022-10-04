@@ -72,6 +72,38 @@
 
 
 
+
+
+
+
+        <Image
+             Grid.Row="1"
+            Grid.Column="1"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+             Margin="149,41,0,35" 
+            Height="49"
+            Width="101"
+            Source="/Images\cart1.png"
+            ></Image>
+
+
+        <Button
+            x:Name="Cart2"
+            Opacity="0"
+            Grid.Row="1"
+            Grid.Column="1"
+            VerticalAlignment="Center"
+
+            Content="Назад"
+            Margin="149,41,21,35" 
+            Height="49" Click="Cart2_Click" 
+            />
+
+
+
+
+
         <ListView x:Name="listBook"
                   Grid.Row="2"
                   Grid.RowSpan="4"
@@ -205,7 +237,8 @@
             Height="54" 
             Margin="174,9.5,172,61.5" 
             RenderTransformOrigin="0.5,0.5" 
-            Width="196" Click="ToCart_Click"
+            Width="196"
+            Click="ToCart_Click"
             />
 
 
