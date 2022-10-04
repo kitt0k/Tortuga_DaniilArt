@@ -23,5 +23,17 @@ namespace Tortuga_DaniilArtyukhov.Windows
         {
             InitializeComponent();
         }
+
+        private void btnBack_Click(object sender, RoutedEventArgs e)
+        {
+            FoodMenuWindow mainWindow = new FoodMenuWindow();
+            mainWindow.Show();
+            this.Close();
+        }
+
+        private void ToCart_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

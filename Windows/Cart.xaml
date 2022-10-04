@@ -73,8 +73,8 @@
 
         <Button
             x:Name="ToCart"
-            Content="Перейти к оформлению"
-            FontSize="16"
+            Content="Оформить заказ"
+            FontSize="24"
             Grid.Row="6"
             Grid.Column="0"
             Grid.ColumnSpan="2"
@@ -83,7 +83,8 @@
             Height="54" 
             Margin="174,9.5,172,61.5" 
             RenderTransformOrigin="0.5,0.5" 
-            Width="196" Click="ToCart_Click"
+            Width="196"
+            Click="ToCart_Click"
             />
         
         <TextBlock
