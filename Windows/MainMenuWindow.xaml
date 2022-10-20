@@ -36,7 +36,7 @@
             Margin="110,76,112,0" Width="320"
             />
         <Button
-            Content="Меню"
+            Content="Меню" 
             FontSize="28"
             x:Name="FoodMenu"
             Grid.Row="2"

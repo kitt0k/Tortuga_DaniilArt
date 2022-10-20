@@ -24,7 +24,7 @@ namespace Tortuga_DaniilArtyukhov.Windows
             InitializeComponent();
         }
 
-        private void btnBack_Click(object sender, RoutedEventArgs e)
+        private void BtnBack_Click(object sender, RoutedEventArgs e)
         {
             MainMenuWindow mainWindow = new MainMenuWindow();
             mainWindow.Show();
