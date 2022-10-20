@@ -22,7 +22,7 @@ namespace Tortuga_DaniilArtyukhov.DB
     
         public int ID { get; set; }
         public int IDTable { get; set; }
-        public System.DateTime OrderDatre { get; set; }
+        public System.DateTime OrderDate { get; set; }
         public int IDWorker { get; set; }
     
         public virtual Table Table { get; set; }

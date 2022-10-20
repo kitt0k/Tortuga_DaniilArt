@@ -21,11 +21,12 @@ namespace Tortuga_DaniilArtyukhov.DB
         }
     
         public int ID { get; set; }
-        public string Items { get; set; }
-        public string Weight { get; set; }
+        public string FoodName { get; set; }
+        public int Weight { get; set; }
         public int IDFoodCategoty { get; set; }
-        public string Descriptuon { get; set; }
-        public Nullable<decimal> Cost { get; set; }
+        public string Description { get; set; }
+        public decimal Cost { get; set; }
+        public string Photo { get; set; }
     
         public virtual Category Category { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

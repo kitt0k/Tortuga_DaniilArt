@@ -101,6 +101,10 @@
             Height="49" Click="Cart2_Click" 
             />
 
+        
+        
+        
+        
 
 
         <ListView x:Name="listProduct"
@@ -108,7 +112,7 @@
                   ScrollViewer.HorizontalScrollBarVisibility="Disabled"
                   Background="{x:Null}" 
                   BorderBrush="{x:Null}"
-                  Margin="10,10,10,0.5" Grid.ColumnSpan="2" Grid.RowSpan="4"
+                  Margin="10,0,10,0.5" Grid.ColumnSpan="2" Grid.RowSpan="4"
                   >
             <ListView.ItemsPanel>
                 <ItemsPanelTemplate>
@@ -118,7 +122,7 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <Border 
-                        Background="White"
+                        Background="Wheat"
                         Width="210"
                         Height="290"
                         Margin="10"
@@ -152,9 +156,6 @@
                     TextAlignment="Center"
                     TextWrapping="Wrap"
                     Grid.Column="1"/>
-
-
-
 
                             <Image
                     Source="{Binding Path=Photo}"
