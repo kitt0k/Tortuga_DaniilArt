@@ -15,10 +15,10 @@ namespace Tortuga_DaniilArtyukhov.DB
     using System.Data.Entity.Core.Objects;
     using System.Linq;
     
-    public partial class TortygaDanArt3isp1117Entities : DbContext
+    public partial class TortygaDanArt3isp1117Entities1 : DbContext
     {
-        public TortygaDanArt3isp1117Entities()
-            : base("name=TortygaDanArt3isp1117Entities")
+        public TortygaDanArt3isp1117Entities1()
+            : base("name=TortygaDanArt3isp1117Entities1")
         {
         }
     

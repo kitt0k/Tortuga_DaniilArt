@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using Tortuga_DaniilArtyukhov.Windows;
-
+using Tortuga_DaniilArtyukhov.Classes;
 
 namespace Tortuga_DaniilArtyukhov.Windows
 {
@@ -118,6 +118,13 @@ namespace Tortuga_DaniilArtyukhov.Windows
                 this.Close();
             }
 
+        }
+
+        private void Test_Click(object sender, RoutedEventArgs e)
+        {
+            Window1 mainWindow = new Window1();
+            mainWindow.Show();
+            this.Close();
         }
     }
 }

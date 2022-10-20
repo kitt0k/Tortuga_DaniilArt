@@ -8,6 +8,6 @@ namespace Tortuga_DaniilArtyukhov.Classes
 {
     class AppData
     {
-        public static DB.TortygaDanArt3isp1117Entities Context { get; } = new DB.TortygaDanArt3isp1117Entities();
+        public static DB.TortygaDanArt3isp1117Entities1 Context { get; } = new DB.TortygaDanArt3isp1117Entities1();
     }
 }

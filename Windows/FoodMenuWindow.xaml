@@ -29,16 +29,15 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-
+   
         <ListView x:Name="listProduct"
                   Grid.Row="2"
-                  ScrollViewer.HorizontalScrollBarVisibility="Disabled"
-                  Background="Gray" 
+                  Background="{x:Null}" 
                   BorderBrush="{x:Null}"
                   Margin="10,0,10,0.5" 
                   Grid.ColumnSpan="2" 
-                  Grid.RowSpan="4"  >
-
+                  Grid.RowSpan="4" 
+                   >
             <ListView.ItemsPanel>
                 <ItemsPanelTemplate>
                     <WrapPanel/>
@@ -46,41 +45,34 @@
             </ListView.ItemsPanel>
             <ListView.ItemTemplate>
                 <DataTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="5*"/>
+                            <ColumnDefinition Width="8*"/>
+                            <ColumnDefinition Width="5*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="1*"/>
+                        </Grid.RowDefinitions>                      
+                   <TextBlock 
+                    Text="{Binding Path=FoodName}"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Center"
+                    Foreground="Black" 
+                    Width="214"
+                    FontSize="18"
+                    Height="72"
+                    TextAlignment="Center"           
+                    TextWrapping="Wrap" Grid.Column="1" Grid.Row="2" />
 
 
-                    <Border 
-                        Background="White"
-                        Width="210"
-                        Height="290"
-                        Margin="10"
-                        BorderThickness="2"
-                        BorderBrush="Yellow"
-                        CornerRadius="30">
-                        <Grid>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="5*"/>
-                                <ColumnDefinition Width="8*"/>
-                                <ColumnDefinition Width="5*"/>
-                            </Grid.ColumnDefinitions>
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="1*"/>
-                                <RowDefinition Height="1*"/>
-                                <RowDefinition Height="1*"/>
-                                <RowDefinition Height="1*"/>
-                                <RowDefinition Height="1*"/>
-                            </Grid.RowDefinitions>
-
-                            <TextBlock
-                                Grid.Row="1"
-                                Grid.Column="0"
-                                FontSize="40"
-                                Background="Wheat"
-                                Text="Тест" Foreground="Red"
-                                    ></TextBlock>
-                            
-                        </Grid>
-                    </Border>
-                </DataTemplate>
+                    </Grid>
+            
+          </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
 

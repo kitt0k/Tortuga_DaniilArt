@@ -16,20 +16,13 @@ using Tortuga_DaniilArtyukhov.Classes;
 namespace Tortuga_DaniilArtyukhov.Windows
 {
     /// <summary>
-    /// Логика взаимодействия для AboutUsWindow.xaml
+    /// Логика взаимодействия для Window1.xaml
     /// </summary>
-    public partial class AboutUsWindow : Window
+    public partial class Window1 : Window
     {
-        public AboutUsWindow()
+        public Window1()
         {
             InitializeComponent();
-        }
-
-        private void Back_Click(object sender, RoutedEventArgs e)
-        {
-            MainMenuWindow mainWindow = new MainMenuWindow();
-            mainWindow.Show();
-            this.Close();
         }
     }
 }
