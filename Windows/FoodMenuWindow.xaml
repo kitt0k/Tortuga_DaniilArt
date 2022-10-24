@@ -37,6 +37,7 @@
                   Margin="10,0,10,0.5" 
                   Grid.ColumnSpan="2" 
                   Grid.RowSpan="4" 
+                  d:ItemsSource="{d:SampleData ItemCount=500}" 
                    >
             <ListView.ItemsPanel>
                 <ItemsPanelTemplate>

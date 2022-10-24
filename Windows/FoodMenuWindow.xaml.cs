@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using Tortuga_DaniilArtyukhov.Classes;
+using Tortuga_DaniilArtyukhov.DB;
 
 namespace Tortuga_DaniilArtyukhov.Windows
 {
@@ -20,9 +21,14 @@ namespace Tortuga_DaniilArtyukhov.Windows
     /// </summary>
     public partial class FoodMenuWindow : Window
     {
+
+        List<Food> productList = new List<Food>();
+
+
         public FoodMenuWindow()
         {
             InitializeComponent();
+            listProduct.ItemsSource = AppData.Context.Food.ToList();
         }
 
        
