@@ -29,7 +29,7 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-   
+
         <ListView x:Name="listProduct"
                   Grid.Row="2"
                   Background="{x:Null}" 
@@ -37,6 +37,7 @@
                   Margin="10,0,10,0.5" 
                   Grid.ColumnSpan="2" 
                   Grid.RowSpan="4" 
+                   ScrollViewer.HorizontalScrollBarVisibility="Disabled"
                   d:ItemsSource="{d:SampleData ItemCount=500}" 
                    >
             <ListView.ItemsPanel>
@@ -46,34 +47,79 @@
             </ListView.ItemsPanel>
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="5*"/>
-                            <ColumnDefinition Width="8*"/>
-                            <ColumnDefinition Width="5*"/>
-                        </Grid.ColumnDefinitions>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="1*"/>
-                            <RowDefinition Height="1*"/>
-                            <RowDefinition Height="1*"/>
-                            <RowDefinition Height="1*"/>
-                            <RowDefinition Height="1*"/>
-                        </Grid.RowDefinitions>                      
-                   <TextBlock 
+                    <Border 
+                        Background="White"
+                        Width="210"
+                        Height="290"
+                        Margin="10"
+                        BorderThickness="2"
+                        BorderBrush="#FFE6C4AA"
+                        CornerRadius="30">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="5*"/>
+                                <ColumnDefinition Width="8*"/>
+                                <ColumnDefinition Width="5*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="1*"/>
+                                <RowDefinition Height="1*"/>
+                                <RowDefinition Height="1*"/>
+                                <RowDefinition Height="1*"/>
+                                <RowDefinition Height="1*"/>
+                            </Grid.RowDefinitions>
+                            <TextBlock 
                     Text="{Binding Path=FoodName}"
-                    HorizontalAlignment="Left"
-                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Top"
                     Foreground="Black" 
                     Width="214"
                     FontSize="18"
                     Height="72"
                     TextAlignment="Center"           
-                    TextWrapping="Wrap" Grid.Column="1" Grid.Row="2" />
+                    TextWrapping="Wrap"
+                    Grid.Row="0"
+                    Grid.ColumnSpan="3" 
+                   />
 
 
-                    </Grid>
-            
-          </DataTemplate>
+                            <Image
+                    Source="{Binding Path=Photo}"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"                    
+                    Grid.Column="0"
+                                Grid.ColumnSpan="3"
+                    Grid.Row="1" 
+                    Grid.RowSpan="2"/>
+
+
+                            <TextBlock 
+                    Text="{Binding Path=Cost}"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Top"
+                    Foreground="Black" 
+                    Width="214"
+                    FontSize="18"
+                    Height="72"
+                    TextAlignment="Center"           
+                    TextWrapping="Wrap"
+                    Grid.Row="3"
+                    Grid.ColumnSpan="3" 
+                    />
+
+
+                            <Button
+                                Content="Добавить"
+                                Grid.Column="0"
+                                Grid.Row="4"
+                                Grid.ColumnSpan="3"
+                                Margin="10 10 10 10"
+                                ></Button>
+                            
+
+                        </Grid>
+                    </Border>
+                </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
 
@@ -104,8 +150,8 @@
             Width="101"
             Source="/Images\back1.png"
             ></Image>
-        
-        
+
+
         <Button
             x:Name="btnBack"
             Opacity="0"
@@ -138,8 +184,8 @@
             Margin="149,41,21,35" 
             Height="49" Click="Cart2_Click" 
             />
-        
-        
+
+
 
 
         <Button
