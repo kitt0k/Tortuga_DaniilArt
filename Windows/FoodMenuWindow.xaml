@@ -39,7 +39,15 @@
                   Grid.RowSpan="4" 
                    ScrollViewer.HorizontalScrollBarVisibility="Disabled"
                   d:ItemsSource="{d:SampleData ItemCount=500}" 
-                   >
+                  MouseDoubleClick="listProduct_MouseDoubleClick" 
+                  FontWeight="Bold">
+
+            <ListView.ItemContainerStyle>
+                <Style TargetType   ="ListBoxItem">
+                    <Setter Property="Focusable" Value="False" />
+                </Style>
+            </ListView.ItemContainerStyle>
+
             <ListView.ItemsPanel>
                 <ItemsPanelTemplate>
                     <WrapPanel/>
@@ -113,7 +121,7 @@
                                 Grid.Column="0"
                                 Grid.Row="4"
                                 Grid.ColumnSpan="3"
-                                Margin="10 10 10 10"
+                                Margin="15 15 15 15"
                                 ></Button>
                             
 

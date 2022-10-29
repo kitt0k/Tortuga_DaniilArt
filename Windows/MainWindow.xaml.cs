@@ -120,11 +120,6 @@ namespace Tortuga_DaniilArtyukhov.Windows
 
         }
 
-        private void Test_Click(object sender, RoutedEventArgs e)
-        {
-            Window1 mainWindow = new Window1();
-            mainWindow.Show();
-            this.Close();
-        }
+        
     }
 }

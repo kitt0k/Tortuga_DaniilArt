@@ -173,17 +173,6 @@
             Margin="93,128,107,22" Grid.Column="1" Click="Table8_Click"
             
             />
-        <Button
-            x:Name="Test"
-            Content="8"
-            FontSize="40"
-            FontFamily="Julee"
-            Grid.Row="3"
-            Background="White" 
-            RenderTransformOrigin="0,0" 
-            Margin="237,63,237,87" 
-            Grid.ColumnSpan="2" Click="Test_Click"
-            
-            />
+       
     </Grid>
 </Window>

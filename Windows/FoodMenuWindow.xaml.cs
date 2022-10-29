@@ -31,7 +31,7 @@ namespace Tortuga_DaniilArtyukhov.Windows
             listProduct.ItemsSource = AppData.Context.Food.ToList();
         }
 
-       
+
         private void BtnBack_Click(object sender, RoutedEventArgs e)
         {
             MainMenuWindow mainWindow = new MainMenuWindow();
@@ -54,5 +54,26 @@ namespace Tortuga_DaniilArtyukhov.Windows
             this.Close();
         }
 
+        private void listProduct_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+
+
+        private void listProduct_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            var editFood = new DB.Food();
+            if (listProduct.SelectedItem is DB.Food)
+            {
+                editFood = listProduct.SelectedItem as DB.Food;
+            }
+
+            FoodInfoWindow addReaderWindow = new FoodInfoWindow(editFood);
+            this.Opacity = 0.2;
+            addReaderWindow.ShowDialog();
+            listProduct.ItemsSource = AppData.Context.Food.ToList();
+            this.Opacity = 1;
+        }
     }
 }
