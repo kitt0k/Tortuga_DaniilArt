@@ -42,13 +42,7 @@
                   MouseDoubleClick="listProduct_MouseDoubleClick" 
                   FontWeight="Bold">
 
-            <ListView.ItemContainerStyle>
-                <Style TargetType   ="ListBoxItem">
-                    <Setter Property="Focusable" Value="False" />
-                </Style>
-            </ListView.ItemContainerStyle>
-
-            <ListView.ItemsPanel>
+                  <ListView.ItemsPanel>
                 <ItemsPanelTemplate>
                     <WrapPanel/>
                 </ItemsPanelTemplate>
