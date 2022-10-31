@@ -14,6 +14,9 @@ using System.Windows.Shapes;
 using Tortuga_DaniilArtyukhov.Classes;
 using Tortuga_DaniilArtyukhov.DB;
 
+
+
+
 namespace Tortuga_DaniilArtyukhov.Windows
 {
     /// <summary>
@@ -24,6 +27,7 @@ namespace Tortuga_DaniilArtyukhov.Windows
 
         List<Food> productList = new List<Food>();
 
+        int count = 0;
 
         public FoodMenuWindow()
         {
@@ -74,6 +78,21 @@ namespace Tortuga_DaniilArtyukhov.Windows
             addReaderWindow.ShowDialog();
             listProduct.ItemsSource = AppData.Context.Food.ToList();
             this.Opacity = 1;
+        }
+
+        private void plus_Click(object sender, RoutedEventArgs e)
+        {
+            if (count == 0)
+            {
+                TBCount.Text = null;
+                count = 1;
+            }
+            else
+            {
+                TBCount.Text++;
+
+                count = Convert.ToDouble(TBCount.Text);
+            }
         }
     }
 }

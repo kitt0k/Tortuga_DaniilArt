@@ -1,0 +1,75 @@
+﻿<Window x:Class="Tortuga_DaniilArtyukhov.Windows.OrderDoneWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tortuga_DaniilArtyukhov.Windows"
+        mc:Ignorable="d"
+        Title="OrderDoneWindow"  Height="903"
+        Width="547"
+        MinHeight="903"
+        MinWidth="547"
+        WindowStartupLocation="CenterScreen"
+        Background="LightGray"
+        >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height ="*"/>
+            <RowDefinition Height ="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Image
+            Source="/Images\TLogo.png"
+            Grid.Row="0"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+          Height="110"
+            ></Image>
+
+
+        <TextBlock
+            Text="    Заказ успешно оформлен"
+            Grid.RowSpan="4"
+            Grid.Column="0"
+            HorizontalAlignment="Center"
+            Grid.ColumnSpan="2"
+            FontSize="100"
+            TextWrapping="Wrap"
+         
+            Margin="0,170,0,-0.5"
+            />
+
+        <Button
+            x:Name="Off"
+            Content="ОК"
+            FontSize="38"
+              Background="White" 
+            Grid.Row="3"
+            VerticalAlignment="Bottom"
+            HorizontalAlignment="Center"
+            Margin="70,0,72,68.5" Height="52" Width="400" Grid.ColumnSpan="2" Click="Back_Click"
+            />
+
+        <TextBlock
+            Grid.Row="3"
+            Grid.Column="0"
+              Grid.ColumnSpan="2"
+            Text="   2020 ресторан 'ТОРТУГАС ДАЙНЕР ПАБ' "
+            FontSize="18"
+            Foreground="#FFA3A3A3"
+            VerticalAlignment="Bottom"
+            HorizontalAlignment="Center"
+            Margin="94,0,93,9.5" 
+            Width="355" Height="26"
+            >
+        </TextBlock>
+
+    </Grid>
+</Window>

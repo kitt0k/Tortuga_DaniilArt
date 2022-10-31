@@ -11,30 +11,22 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using Tortuga_DaniilArtyukhov.Classes;
 
 namespace Tortuga_DaniilArtyukhov.Windows
 {
     /// <summary>
-    /// Логика взаимодействия для Cart.xaml
+    /// Логика взаимодействия для OrderDoneWindow.xaml
     /// </summary>
-    public partial class Cart : Window
+    public partial class OrderDoneWindow : Window
     {
-        public Cart()
+        public OrderDoneWindow()
         {
             InitializeComponent();
         }
 
-        private void btnBack_Click(object sender, RoutedEventArgs e)
+        private void Back_Click(object sender, RoutedEventArgs e)
         {
-            FoodMenuWindow mainWindow = new FoodMenuWindow();
-            mainWindow.Show();
-            this.Close();
-        }
-
-        private void ToCart_Click(object sender, RoutedEventArgs e)
-        {
-            OrderDoneWindow mainWindow = new OrderDoneWindow();
+            MainMenuWindow mainWindow = new MainMenuWindow();
             mainWindow.Show();
             this.Close();
         }

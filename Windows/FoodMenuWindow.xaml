@@ -110,12 +110,33 @@
                     />
 
 
+                            <TextBlock
+                                x:Name="TBCount"
+                                Text="0"
+                                Grid.Column="1"
+                                VerticalAlignment="Center"
+                                HorizontalAlignment="Center"
+                                Grid.Row="4"
+                                Margin="15 15 15 15"
+                                >
+                                
+                                
+                            </TextBlock>
+                            
+                            <Button 
+                                x:Name="plus"
+                                Content="+"
+                                Grid.Column="4"
+                                Grid.Row="4"
+                                Margin="10 10 10 10" Click="plus_Click"
+                                
+                                ></Button>
                             <Button
-                                Content="Добавить"
+                                x:Name="minus"
+                                Content="-"
                                 Grid.Column="0"
                                 Grid.Row="4"
-                                Grid.ColumnSpan="3"
-                                Margin="15 15 15 15"
+                                Margin="10 10 10 10"
                                 ></Button>
                             
 
