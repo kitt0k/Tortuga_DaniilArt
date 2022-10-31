@@ -80,7 +80,7 @@ namespace Tortuga_DaniilArtyukhov.Windows
             this.Opacity = 1;
         }
 
-        private void plus_Click(object sender, RoutedEventArgs e)
+        public void plus_Click(object sender, RoutedEventArgs e)
         {
             if (count == 0)
             {
