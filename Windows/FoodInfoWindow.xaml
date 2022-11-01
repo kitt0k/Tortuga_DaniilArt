@@ -5,11 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tortuga_DaniilArtyukhov.Windows"
         mc:Ignorable="d"
-        Title="FoodInfoWindow"  Height="903"
+        Title="FoodInfoWindow" 
+        Height="903"
         Width="547"
         MinHeight="903"
         MinWidth="547"
         WindowStartupLocation="CenterScreen"
+        Background="LightGray"
         >
     <Grid>
         <Grid.RowDefinitions>

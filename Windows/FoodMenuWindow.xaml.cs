@@ -82,17 +82,17 @@ namespace Tortuga_DaniilArtyukhov.Windows
 
         public void plus_Click(object sender, RoutedEventArgs e)
         {
-            if (count == 0)
-            {
-                TBCount.Text = null;
-                count = 1;
-            }
-            else
-            {
-                TBCount.Text++;
+            //if (count == 0)
+            //{
+            //    TBCount.Text = null;
+            //    count = 1;
+            //}
+            //else
+            //{
+            //    TBCount.Text++;
 
-                count = Convert.ToDouble(TBCount.Text);
+            //    count = Convert.ToDouble(TBCount.Text);
             }
         }
     }
-}
+
