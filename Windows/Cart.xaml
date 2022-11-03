@@ -37,6 +37,8 @@
           Height="110"
             ></Image>
 
+
+
         <TextBlock
             Text="Кoрзина"
             Grid.Row="1"
@@ -86,7 +88,7 @@
             Width="196"
             Click="ToCart_Click"
             />
-        
+
         <TextBlock
             Grid.Row="6"
             Grid.Column="0"

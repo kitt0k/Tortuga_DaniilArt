@@ -22,7 +22,7 @@ namespace Tortuga_DaniilArtyukhov.Windows
     {
         public Cart()
         {
-            InitializeComponent();
+            InitializeComponent();           
         }
 
         private void btnBack_Click(object sender, RoutedEventArgs e)

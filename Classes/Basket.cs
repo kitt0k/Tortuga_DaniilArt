@@ -10,54 +10,38 @@ namespace Tortuga_DaniilArtyukhov.Classes
 {
   public class Basket
     {
-        private List<CartLine> lineCollection = new List<CartLine>();
-
-        public void AddItem(Food food, int quantity)
-        {
-            CartLine line = lineCollection
-              .Where(p => p.Food.ID == food.ID)
-              .FirstOrDefault();
-
-            if (line == null)
-            {
-                lineCollection.Add(new CartLine
-                {
-                    Food = food,
-                    Quantity = quantity
-                });
-            }
-            else
-            {
-                line.Quantity += quantity;
-            }
-        }
-
-        public void RemoveLine(Food food)
-        {
-            lineCollection.RemoveAll(l => l.Food.ID == food.ID);
-        }
-
-        public decimal ComputeTotalValue()
-        {
-            return lineCollection.Sum(e => e.Food.Cost * e.Quantity);
-        }
-
-        public void Clear()
-        {
-            lineCollection.Clear();
-        }
-
-        public IEnumerable<CartLine> Lines
-        {
-            get { return lineCollection; }
-        }
+        public string FoodName { get; set; }
+        public decimal Cost { get; set; }
     }
 
-    public class CartLine
+    public class ShoppingCart
     {
-        public Food Food { get; set; }
-        public int Quantity { get; set; }
+        private List<Food> _products = new List<Food>();
+        public decimal TotalPrice { get; private set; }
+
+        public void AddProduct(Food product)
+        {
+            _products.Add(product);
+            RecalculateTotalPrice();
+        }
+
+        public void RemoveProduct(Food product)
+        {
+            _products.Remove(product);
+            RecalculateTotalPrice();
+        }
+
+        private void RecalculateTotalPrice()
+        {
+            var totalPrice = 0m;
+            foreach (var product in _products)
+            {
+                totalPrice += product.Cost;
+            }
+            TotalPrice = totalPrice;
+        }
     }
+
 }
 
 
